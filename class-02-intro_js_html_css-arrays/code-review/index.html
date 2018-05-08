@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Code 201 Lab 1</title>
+</head>
+
+<body>
+    <h1>Code 201 Lab 1</h1>
+    <h2>Questions</h2>
+    <ol>
+        <li>What is your name?</li>
+        <li>What would you like to have as your main course?</li>
+        <li>What would you like to have as a side?</li>
+        <li>What would you like to drink?</li>
+    </ol>
+    <script>
+        if (confirm(
+                'You have been invited to the seattle-201n11 inaugural picnic! We will be catering meals for each attendee based on their requests. Click \"OK\" to attend the picnic, or \"Cancel\" to decline.'
+            )) {
+            var attendee = prompt('Great! What is your name?');
+            console.log('Attendee\'s name is ' + attendee);
+            var mainCourse = prompt('Hello, ' + attendee + '. What would you like to have as your main course?');
+            console.log('Main course is ' + mainCourse);
+            var sideDish = prompt('Cool, I also like ' + mainCourse + '. What would you like to have as a side?');
+            console.log('Side dish is ' + sideDish);
+            var drink = prompt(mainCourse + ' goes well with ' + sideDish +
+                ', doesn\'t it? Okay, what would you like to drink?');
+            console.log('Drink is ' + drink);
+            alert('Thanks, ' + attendee + '! We will prepare you a meal of ' + mainCourse + ', with a side of ' +
+                sideDish + ', and ' + drink + ' to drink. We look forward to seeing you!');
+        } else {
+            alert('Too bad! Hope we\'ll see you at the 301 picnic.');
+        }
+    </script>
+</body>
+
+</html>
